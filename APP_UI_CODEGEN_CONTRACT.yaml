@@ -1,0 +1,25 @@
+contract_version: KPB-SAGE-STATION-CODEGEN-v2
+app_id: kitchen-prep-board
+backend_sha256: 431414417d83201263951f0f3ed5854d38da88c7ec1b96c8e3d42168e556083b
+selected_screen_pack_sha256: d2c94eb77c8db9d818cce7365f26b03cdeea03492e24611e3872b24355dc19a9
+owner_directed_ui_concept: KPB-SAGE-STATION-2026-08-22
+platform: ios
+native_track: SwiftUI
+visual_locks:
+  palette: warm cream + muted sage + natural wood + dark green
+  logo: prep-board/timer/checklist; no botanical substitute
+  ingredient_media: semantic/category symbol only
+  tool_media: representative known tool symbol; one generic kitchen-tool fallback
+  timing_icons: distinct Cook Now / Serve At / Ready By semantics
+  resume_icon: one clean optically-centred play glyph
+  privacy_ads_label_en: Show ads
+  themes: [light, dark, system]
+ios_monetisation:
+  full_app_free: true
+  remove_ads: one_time_lifetime_entitlement
+  product_id: external_configuration_required
+responsive:
+  narrow_gutter_pt: 12
+  standard_gutter_pt: 16
+  tablet_gutter_pt: 24
+  run_board_expanded_min_safe_width_pt: 900
