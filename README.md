@@ -9,4 +9,6 @@ Authority:
 - Native UI: SwiftUI
 - iOS monetisation adaptation: ad-supported full app with a one-time ad-removal entitlement; no subscription is hard-coded into the iOS UI.
 
+Release integration still needs production StoreKit/ad-privacy adapters, full locale resources, and platform timer/recovery wiring before a store build can be certified.
+
 `project.yml` is the authoritative project definition. Run `xcodegen generate` on macOS to create the `.xcodeproj`. No push-triggered workflow is included.
