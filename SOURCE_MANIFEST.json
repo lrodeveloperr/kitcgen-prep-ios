@@ -14,7 +14,7 @@
     {"path": "KitchenPrepBoard/Model.swift", "sha256": "1f33b98d4a570a72d1ef134e9e961b652c253d2f2b4d77dbd582e7f6aaf2be95", "bytes": 6561},
     {"path": "KitchenPrepBoard/Screens.swift", "sha256": "c692cbbca357cee8640af2c3bb407e04c0d531ae3308a95a942d75e1a936ba08", "bytes": 19070},
     {"path": "KitchenPrepBoard/Theme.swift", "sha256": "41ed57a767a60882001e90f3a2e34beefa96e01942257fdb02f96922b842149c", "bytes": 6256},
-    {"path": "README.md", "sha256": "43f504e7c8cb8afd6732e8f5707e9f589e2845e22e3a739a0d4747d2735c3133", "bytes": 748},
+    {"path": "README.md", "sha256": "123b3cbb93c07bf1ee1f552a838e718201d472b38f7a558e2defc18a75d30ebd", "bytes": 919},
     {"path": "docs/UI_AUTHORITY.md", "sha256": "502fc43900b4b516f561ea28b71e4b66256fac40ec640eed39ef96ce5177c1f4", "bytes": 330},
     {"path": "project.yml", "sha256": "d8415953675eee3fa1e9d6e2ee32427bf799dcb22b874b1d333237e25eb4ae2e", "bytes": 1109}
   ]
