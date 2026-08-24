@@ -1,0 +1,5 @@
+Kitchen Prep Board Android backend contract reference
+Schema: 1.1.0
+SHA-256: 431414417d83201263951f0f3ed5854d38da88c7ec1b96c8e3d42168e556083b
+
+This hash identifies the authoritative Android backend contract used to align the shared workflow. It is NOT an iOS backend implementation or an iOS monetization/background-execution contract.

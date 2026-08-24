@@ -1,13 +1,25 @@
-# Kitchen Prep Board — iOS Latest Version
+# Kitchen Prep Board — iOS SwiftUI latest
 
-`main` intentionally points to the canonical latest SwiftUI source package for Kitchen Prep Board.
+`main` contains the current native SwiftUI source as an exploded Swift Package rather than only a ZIP artifact.
 
-- Canonical package: `Kitchen-Prep-Board-SwiftUI-Skin-v1.zip`
-- Backend contract basis: Android backend specification v1.1.0, embedded in the package
-- Shared UI contract: `KitchenPrepBoard-UI-Contract-v1.0.0.json`
-- Verification: `KitchenPrepBoard-Skin-Verification.json`
-- Package SHA-256: `d559ee436a6c05995a94634f1b6f632538916471ba5165b2d8e89ea41991dd22`
+It uses the shared Kitchen Prep Board UI/workflow contract and targets iOS 16+.
 
-Extract the ZIP to build or inspect the current source. Previous implementations remain available in Git history and are not current authority.
+## Backend boundary
 
-The SwiftUI package mirrors the shared app-owned UI/workflow contract but does not invent StoreKit, iOS share-ingress, AdMob iOS behavior, or Apple background behavior absent from the authoritative backend source.
+The currently supplied authoritative backend contract is Android-specific (Room, Android broadcast/alarm recovery, Google Mobile Ads/UMP and Google Play Billing), SHA-256 `431414417d83201263951f0f3ed5854d38da88c7ec1b96c8e3d42168e556083b`.
+
+Accordingly, this iOS source does **not** claim native backend parity that has not been implemented:
+
+- no fabricated SwiftData/Core Data persistence layer;
+- no fabricated iOS background timer/notification recovery behavior;
+- no fabricated StoreKit remove-ads product;
+- no fabricated iOS AdMob/consent implementation;
+- no fabricated iOS share ingress.
+
+The current `PreviewKitchenBackend` is intentionally a presentation/workflow adapter. The Android v1.1.1 critical/major fixes remain Android changes unless and until their native iOS equivalents are implemented and validated.
+
+## Source
+
+Open `Package.swift` in Xcode 16+ and use the included SwiftUI previews. Runtime content images are absent; workflow icons are native vector paths.
+
+See `VERIFICATION.json` for the validation boundary.
