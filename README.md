@@ -1,14 +1,13 @@
-# Kitchen Prep Board — iOS / iPadOS
+# Kitchen Prep Board — iOS Latest Version
 
-Fresh native **Sage Station** SwiftUI skin and workflow baseline for Kitchen Prep Board — Personal Station Workbench.
+`main` intentionally points to the canonical latest SwiftUI source package for Kitchen Prep Board.
 
-Authority:
-- App ID: `kitchen-prep-board`
-- Frozen backend specification SHA-256: `431414417d83201263951f0f3ed5854d38da88c7ec1b96c8e3d42168e556083b`
-- Supplied Sage Station complete-screen-pack SHA-256: `d2c94eb77c8db9d818cce7365f26b03cdeea03492e24611e3872b24355dc19a9`
-- Native UI: SwiftUI
-- iOS monetisation adaptation: ad-supported full app with a one-time ad-removal entitlement; no subscription is hard-coded into the iOS UI.
+- Canonical package: `Kitchen-Prep-Board-SwiftUI-Skin-v1.zip`
+- Backend contract basis: Android backend specification v1.1.0, embedded in the package
+- Shared UI contract: `KitchenPrepBoard-UI-Contract-v1.0.0.json`
+- Verification: `KitchenPrepBoard-Skin-Verification.json`
+- Package SHA-256: `d559ee436a6c05995a94634f1b6f632538916471ba5165b2d8e89ea41991dd22`
 
-Release integration still needs production StoreKit/ad-privacy adapters, full locale resources, and platform timer/recovery wiring before a store build can be certified.
+Extract the ZIP to build or inspect the current source. Previous implementations remain available in Git history and are not current authority.
 
-`project.yml` is the authoritative project definition. Run `xcodegen generate` on macOS to create the `.xcodeproj`. No push-triggered workflow is included.
+The SwiftUI package mirrors the shared app-owned UI/workflow contract but does not invent StoreKit, iOS share-ingress, AdMob iOS behavior, or Apple background behavior absent from the authoritative backend source.

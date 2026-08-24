@@ -1,0 +1,18 @@
+{
+  "appId": "kitchen-prep-board",
+  "platform": "ios",
+  "status": "LATEST",
+  "version": "v1",
+  "publishedDate": "2026-08-24",
+  "canonicalArtifact": "Kitchen-Prep-Board-SwiftUI-Skin-v1.zip",
+  "artifactSha256": "d559ee436a6c05995a94634f1b6f632538916471ba5165b2d8e89ea41991dd22",
+  "backendSchemaVersion": "1.1.0",
+  "backendSha256": "431414417d83201263951f0f3ed5854d38da88c7ec1b96c8e3d42168e556083b",
+  "uiContract": "KitchenPrepBoard-UI-Contract-v1.0.0.json",
+  "uiContractSha256": "abf1e006048185aa2df4cb8a5843c423eab5e0821c34fbc47e84d41c50169cb5",
+  "verification": "KitchenPrepBoard-Skin-Verification.json",
+  "verificationSha256": "e5b47d035616b1cc901d51b0390fa55c9b46d7940b12631c4e8efcd65bef8731",
+  "previousMain": "973c9a1e514b215a1c0af6d6d8e44d53729ef703",
+  "sourceType": "versioned-source-package",
+  "note": "This ZIP is the canonical latest SwiftUI source package. Earlier exploded implementations remain available in Git history."
+}
