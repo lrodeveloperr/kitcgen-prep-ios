@@ -1,21 +1,34 @@
 {
-  "reportVersion": "1.1.0",
+  "reportVersion": "2.0.0",
   "appId": "kitchen-prep-board",
   "platform": "ios",
-  "sourceRevision": "2026-08-24.1",
-  "uiContractSha256": "abf1e006048185aa2df4cb8a5843c423eab5e0821c34fbc47e84d41c50169cb5",
-  "androidBackendContractReferenceSha256": "431414417d83201263951f0f3ed5854d38da88c7ec1b96c8e3d42168e556083b",
+  "canonicalCommit": "d3dff709b2510c949c381bcc63f8210a783194a0",
   "checks": {
-    "swift_package_manifest": {"status":"PASS"},
-    "swift_syntax_parse": {"status":"PASS","toolchain":"Swift 6.2.1 Linux parser"},
-    "ios_image_ban": {"status":"PASS","rasterAssets":0,"runtimeContentImages":0},
-    "shared_workflow_state_coverage": {"status":"PASS","count":14},
-    "ios_swiftui_typecheck_render": {"status":"UNAVAILABLE","reason":"Apple SwiftUI frameworks/Xcode are not available in the packaging environment."},
-    "native_ios_backend": {"status":"NOT_IMPLEMENTED","reason":"No authoritative native iOS persistence, notification/background execution, monetization, consent, or share-ingress backend contract/source was supplied."}
+    "shared_flutter_analysis": {
+      "status": "PASS",
+      "runId": 33314151744
+    },
+    "shared_flutter_tests": {
+      "status": "PASS",
+      "runId": 33314151744
+    },
+    "ios_runner_present": {
+      "status": "PASS",
+      "path": "flutter_app/ios"
+    },
+    "flavor_entrypoints": {
+      "status": "PASS",
+      "entrypoint": "flutter_app/lib/main.dart"
+    },
+    "ios_xcode_compile": {
+      "status": "NOT_RUN"
+    },
+    "ios_signed_archive": {
+      "status": "NOT_BUILT"
+    },
+    "testflight_upload": {
+      "status": "NOT_UPLOADED"
+    }
   },
-  "sourceBoundaries": [
-    "The iOS source is a native SwiftUI presentation package, not a claimed translation of Android Room/AlarmManager/Play Billing behavior.",
-    "The Android v1.1.1 fixes are not labeled as iOS fixes unless a native iOS equivalent exists and is tested."
-  ],
-  "handoffStatus": "SWIFTUI_PRESENTATION_SOURCE_READY_FOR_XCODE"
+  "handoffStatus": "CANONICAL_IOS_SOURCE_MERGED_XCODE_BUILD_PENDING"
 }
