@@ -1,16 +1,27 @@
 {
-  "reportVersion": "2.0.0",
+  "reportVersion": "2.0.1",
   "appId": "kitchen-prep-board",
   "platform": "ios",
-  "canonicalCommit": "d3dff709b2510c949c381bcc63f8210a783194a0",
+  "validatedCommit": "d3dff709b2510c949c381bcc63f8210a783194a0",
+  "currentCanonicalCommit": "44a3ba89b86a6ae963a664ea979be22dd66e9c32",
   "checks": {
     "shared_flutter_analysis": {
       "status": "PASS",
-      "runId": 33314151744
+      "runId": 33314151744,
+      "commit": "d3dff709b2510c949c381bcc63f8210a783194a0"
     },
     "shared_flutter_tests": {
       "status": "PASS",
-      "runId": 33314151744
+      "runId": 33314151744,
+      "commit": "d3dff709b2510c949c381bcc63f8210a783194a0"
+    },
+    "post_validation_changes": {
+      "status": "CI_NOT_RERUN",
+      "commit": "44a3ba89b86a6ae963a664ea979be22dd66e9c32",
+      "changes": [
+        "Salt timer notification IDs with Object.hash while preserving collision resolution",
+        "Add regression coverage for salted collision-aware notification IDs"
+      ]
     },
     "ios_runner_present": {
       "status": "PASS",
@@ -30,5 +41,5 @@
       "status": "NOT_UPLOADED"
     }
   },
-  "handoffStatus": "CANONICAL_IOS_SOURCE_MERGED_XCODE_BUILD_PENDING"
+  "handoffStatus": "CANONICAL_IOS_SOURCE_UPDATED_CI_XCODE_BUILD_PENDING"
 }
